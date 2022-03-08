@@ -64,20 +64,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 pull-left">
-                    <a class="custom_head animated fadein" href="#"><img src="/static/img/logo.png" width="56" alt=""
-                            title="" /></a>
+                    <!-- <a class="custom_head animated fadein" href="#"><img src="/static/img/logo.png" width="56" alt=""
+                            title="" /></a> -->
                 </div>
             </div>
         </div>
     </nav>
 
 
+
     <section class="host-banner">
         <div class="container" style="background-color: white;">
             <div class="row" style="background-color: white;">
                 <div class="col-md-12" style="background: white;">
-                    <h1 style="color: rgb(4,86,145);">AWS LINKS</h1>
-                    <br>
+                    <h1 style="color: lightseagreen;">DOCS ARCHIVER</h1>
+                   
+                    <a href='/add'>
+                        <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" style="margin-left: 100rem; background-color: lightseagreen;">Add Docs</button>
+    
+                      </a>
+                      <br> <br> 
                     <table>
 
                         {% for group in titles|groupby('title') %}
@@ -100,17 +106,16 @@
     </section>
 
 
-
-    <div class="clearfix"></div>
-    <footer class="footer inner animated fadeIn">
-        <div class="container">
+    
+    <!-- <footer class="footer inner animated fadeIn" style="background-color: lightseagreen;">
+        <div class="container" >
             <div class="row">
                 <div class="col-sm-12 text-center copy">
                     <p>Copyright 2017 TalentAccurate.com, Inc. All Rights Reserved</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

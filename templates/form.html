@@ -17,10 +17,11 @@
     }
 
     body {
-      background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+      /* background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%); */
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: whitesmoke;
     }
 
     /* Feed */
@@ -130,17 +131,17 @@
 
 <body>
 
-  <nav class="navbar navbar-white navbar-white-inner navbar-fixed-top" style="width:100%">
+  <nav class="navbar navbar-white navbar-white-inner navbar-fixed-top" style="width:100%;background-color: lightseagreen">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 pull-left">
-          <a class="custom_head animated fadein" href="#"><img src="static/img/logo.png" width="56" alt=""
-              title="" /></a>
+          <a class="custom_head animated fadein" href="#">
+            <!-- <img src="static/img/logo.png" width="56" alt=""
+              title="" /></a> -->
         </div>
-        <h2>
-          <span class="material-icons" style="margin-right: 2rem;">
-            audiotrack
-          </span> Add yours too !</h2>
+        <h2 style="color: white">
+ 
+           ADD DOC's</h2>
       </div>
     </div>
   </nav>
@@ -153,7 +154,7 @@
     <!-- Sidebar Starts -->
 
     <a href='/'>
-      <button type='submit' class="btn btn-success">View All ---->></button>
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" style="margin-left: 100rem; background-color: lightseagreen; color:white;">My Archive</button>
     </a>
 
     <br><br><br>
@@ -166,7 +167,7 @@
         <div class="post__body" style="width:100rem;">
 
 
-          <h4>Enter url</h4>
+          <h4>Enter url / url's</h4>
           <textarea rows="2" cols="10" class="form-control mb-3 mt-2" name="url" placeholder="Enter Urls"
             type="text" id="names"></textarea>
 
@@ -177,7 +178,7 @@
         <div>
 
           <a href='/'>
-            <button type='submit' class="btn btn-success" style="margin-left: 90rem;">Done</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" id="search-btn" style="margin-left: 100rem; background-color: lightseagreen; color: white;">Done</button>
           </a>
         </div>
       </form>

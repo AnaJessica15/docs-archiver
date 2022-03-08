@@ -91,13 +91,13 @@ def view(title):
 
         if title.strip(' \n') == d["title"].strip(' \n'):
 
-            texts = d["text"] 
+            body = d["text"] 
 
             contents = d['summary']
 
             images = d['image']
 
-    return render_template('single.html',content = contents,image = images, title=title, text=texts) 
+    return render_template('single.html',content = contents,image = images, title=title, text= body) 
     
 
 if __name__ == "__main__":
