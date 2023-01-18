@@ -37,7 +37,7 @@ def add():
             title     = article.title 
             content = article.text
             image    = article.top_image
-            article.nlp()
+            # article.nlp()
             summary   = article.summary
 
             data = {
